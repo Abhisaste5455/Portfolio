@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+
+        <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/Illustrations/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Abhishek Saste</h1>
+
+          <p class="title">Full Stack Dot Net Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:richard@example.com" class="contact-link">abhisaste055@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+91 7517080559</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+             
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Pune</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/abhishek-saste-76ba7b1b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link">
+              <ion-icon name="logo-Linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Abhisaste5455" class="social-link">
+              <ion-icon name="logo-GitHub"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+    <ul class="navbar-list">
+        <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+        </li>
+        <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button> <!-- Changed from "Resume" to "Skills" -->
+        </li>
+        <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Project</button>
+        </li>
+        <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+        </li>
+       
+    </ul>
+</nav>
+
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <br><br><br><br>
+          <p>
+            I'm a Full Stack .NET Developer in both backend and frontend development. I’m passionate about transforming
+            complex challenges into efficient, scalable, and user-friendly applications. With experience across web
+            development and software engineering, I create robust, secure, and performant solutions that meet user needs
+            and business goals.
+          </p>
+
+          <br><br>
+
+          <p>
+            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your
+            message and identity in the most creative way. I created web design for many famous brand companies.
+          </p>
+        </section>
+
+
+
+        
+
+
+        
+       
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div> 
+
+
+        
+      </article>
+
+
+
+
+
+      <!--
+  - #RESUME
+-->
+
+<article class="skills" data-page="skills">
+
+  <header>
+    <h2 class="h2 article-title">Skills</h2>
+  </header>
+
+ 
+  
+  <section class="skill">
+
+    <ul class="skills-list">
+
+      <h3 class="Head1">Frontend</h3><br>
+
+      <div class="sourav">
+      <li class="skills-item">
+
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 80%;">HTML</div>
+        </div>
+
+      </li>
+
+      <li class="skills-item">
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 80%;">CSS</div>
+        </div>
+
+      </li>
+
+      <li class="skills-item">
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 80%;">Bootstrap</div>
+        </div>
+
+      </li>
+      
+
+      <li class="skills-item">
+
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 80%;">JavaScript</div>
+        </div>
+
+      </li>
+      <li class="skills-item">
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 80%;">JQuery</div>
+        </div>
+
+      </li>
+
+      <li class="skills-item">
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 80%;">React</div>
+        </div>
+
+      </li>
+
+      <li class="skills-item">
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 80%;">Redux</div>
+        </div>
+
+      </li>
+      
+      <br>
+      </div>
+
+      <h3 class="Head1">Backend</h3> <br>
+  
+
+    
+      <div class="sourav">
+      <li class="skills-item">
+
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 80%;">C#</div>
+        </div>
+
+      </li>
+
+      <li class="skills-item">
+
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 80%;">ASP.NET</div>
+        </div>
+
+      </li>
+
+      <li class="skills-item">
+
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 80%;">MySQL</div>
+        </div>
+
+      </li>
+
+      <li class="skills-item">
+
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 80%;">Soft.Testing</div>
+        </div>
+
+      </li>
+      </div>    
+
+      
+
+
+      
+
+    </ul>
+  
+  </section>
+
+</article>
+
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="project" data-page="project">
+
+        <header>
+          <h2 class="h2 article-title">Project</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <!-- <li class="filter-item">
+              <button data-filter-btn>Frontend</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Backend</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li> -->
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <!-- <li class="select-item">
+                <button data-select-item>Frontend</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Backend</button>
+              </li> -->
+
+              <!-- <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li> -->
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="Frontend">
+              <a href="https://abhisaste5455.github.io/HotelProject/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Illustrations/Hotel.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Hotel</h3>
+
+                <p class="project-category">Frontend</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://abhisaste5455.github.io/FoodProject/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Illustrations/Food.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Food</h3>
+
+                <p class="project-category">Frontend</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://abhisaste5455.github.io/RealestateProject/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Illustrations/Real Estate.png " alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Real Estate</h3>
+
+                <p class="project-category">Frontend</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://abhisaste5455.github.io/FashionProject/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Illustrations/Fashion.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fashion</h3>
+
+                <p class="project-category">Frontend</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://abhisaste5455.github.io/WeddingProject/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Illustrations/Wed.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Wedding</h3>
+
+                <p class="project-category">Frontend</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://shop-project-eosin.vercel.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Illustrations/Shop.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Shop</h3>
+
+                <p class="project-category">Frontend</p>
+
+              </a>
+            </li>
+
+          
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+      <article class="education" data-page="education">
+
+        <header>
+          <h2 class="h2 article-title">Education</h2>
+        </header>
+      
+        <section class="timeline">
+      
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+      
+            <h3 class="h3">Education</h3>
+          </div>
+      
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+      
+              <h4 class="h4 timeline-item-title">Diploma In Full Stack Dot.Net</h4>
+      
+              <span>6 Months</span>
+      
+              <p class="timeline-text">
+                Envision Computer Training Institute 
+              </p>
+      
+            </li>
+      
+            <li class="timeline-item">
+      
+              <h4 class="h4 timeline-item-title">B.E in Information Technology</h4>
+      
+              <span>2020 — 2024</span>
+      
+              <p class="timeline-text">
+                Savitribai Phule Pune University
+              </p>
+      
+            </li>
+
+            
+      
+            <li class="timeline-item">
+      
+              <h4 class="h4 timeline-item-title">HSC</h4>
+      
+              <span>2019 — 2020</span>
+      
+              <p class="timeline-text">
+                Maharashtra State Board
+              </p>
+      
+            </li>
+      
+            <li class="timeline-item">
+      
+              <h4 class="h4 timeline-item-title">SSC</h4>
+      
+              <span>2017 — 2018</span>
+      
+              <p class="timeline-text">
+                Maharashtra State Board.
+              </p>
+      
+            </li>
+      
+          </ol>
+      
+        </section>
+      
+      </article>
+      
+
+
+      
+
+
+
+
+     
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
